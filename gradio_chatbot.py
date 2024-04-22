@@ -1,10 +1,9 @@
 import gradio as gr
-import embedding_RetrievalQA_Wiki
 import prompt
 import css
 
 def get_answer_with_temp(question, temperature):
-    embedding_RetrievalQA_Wiki.set_temperature(temperature)
+    prompt.set_temperature(temperature)
     answer = prompt.get_answer(question, temperature)  # Ensure this matches the expected function signature in prompt.py
     return answer
 

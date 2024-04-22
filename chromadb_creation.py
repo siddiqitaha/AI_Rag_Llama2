@@ -14,8 +14,7 @@ def loader():
 content = loader()[0].page_content
 
 text_splitter = CharacterTextSplitter(
-    separator="\n", 
-    chunk_size=500,
+    chunk_size=750,
     chunk_overlap=75,
     is_separator_regex=False,
 )

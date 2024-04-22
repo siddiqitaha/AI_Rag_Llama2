@@ -1,6 +1,13 @@
 import embedding_RetrievalQA_Wiki
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
+from langchain_community.chat_models import ChatOllama
+
+model = "llama2"
+
+def set_temperature(new_temperature):
+    global llm
+    llm = ChatOllama(model=model, temperature=new_temperature)
 
 # Build prompt
 template = """Use the following pieces of context to answer the question. 
@@ -16,13 +23,13 @@ Answer:"""
 QA_CHAIN_PROMPT = PromptTemplate.from_template(template)# Run chain
 
 def get_answer(question, temperature):
-    embedding_RetrievalQA_Wiki.set_temperature(temperature)  # Adjust the model's temperature
+    set_temperature(temperature)  # Adjust the model's temperature
     
     # Use the `template` variable directly without redeclaration
     QA_CHAIN_PROMPT = PromptTemplate.from_template(template)  # Use the existing `template` variable
 
     qa_chain = RetrievalQA.from_chain_type(
-        embedding_RetrievalQA_Wiki.llm,
+        llm,
         retriever=embedding_RetrievalQA_Wiki.db3.as_retriever(),
         return_source_documents=True,
         chain_type_kwargs={"prompt": QA_CHAIN_PROMPT}
