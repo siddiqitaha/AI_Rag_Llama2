@@ -1,8 +1,5 @@
 import prompt
 import pandas as pd
-#import chromadb_creation
-#import embedding_RetrievalQA_Wiki
-from giskard.rag import evaluate
 from datasets import Dataset
 from ragas import evaluate
 import embedding_RetrievalQA_Wiki
@@ -10,7 +7,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from langchain_community.chat_models import ChatOllama
 import os
-llama2_model = ChatOllama(model="llama2")
+
 
 question_list = [
     "When was the University of Aberdeen established?",
@@ -63,13 +60,6 @@ question_context_answers = []
 model = "llama2"
 llm = ChatOllama(model=model)
 # embeddings=OllamaEmbeddings(model='nomic-embed-text'
-
-#df = pd.DataFrame([d.page_content for d in chromadb_creation.texts], columns=["text"])
-#print(df.head(10))
-
-# Giskard is a library which helps test knowledge bases, it helps with building test cases to test the LLM model.
- 
-#KnowledgeBase = KnowledgeBase(df)
 
 QA_CHAIN_PROMPT = PromptTemplate.from_template(prompt.template)
 
