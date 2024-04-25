@@ -53,15 +53,6 @@ Enter a **Wikipedia URL** you would like to collect data from to reference.
 ----
 # Running Chatbot
 ---
-## Windows/Linux (CPU/GPU)
-### Prerequisites
-
-Before running the software, ensure you have Python installed along with the necessary dependencies:
-- Python 3.8 or newer
-- Install [Ollama](https://ollama.com/download/windows)
-- Install Git
-- Install CUDA (GPU only)
----
 ### Installation
 
 **First**, Clone Repository to your local machine:
