@@ -7,7 +7,7 @@ from langchain_community.vectorstores import Chroma
 persist_directory = './VectorStore'
 
 def loader():
-    loader = WebBaseLoader("https://en.wikipedia.org/wiki/University_of_Aberdeen", )
+    loader = WebBaseLoader(input('WIKIPEDIA LINK'), )
     document = loader.load()
     return document
 
