@@ -23,7 +23,7 @@ The software is designed to query Llama2 model using the Ollama framework:
 Before running the software, ensure you have Python installed along with the necessary dependencies:
 - Python 3.8 or newer
 - Install [Ollama](https://ollama.com/download/windows)
-- Run
+- Install Python Libraries and Dependencies
 ```bash
 pip install -r requirements.txt
 ```
