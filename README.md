@@ -1,4 +1,4 @@
-# Ollama RAG Model Comparison
+# Custom Ollama RAG Model
 
 This project uses Ollama library to run a custom Llama 2 with 7b parameters RAG (Retrieval Augmented Generation) model. The program will launch a custom chatbot which references information and data about The University of Aberdeen from its Wikipedia Page. The project includes a data extraction module, retreival engine module, prompt module, and a gradio module. 
 
