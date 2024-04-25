@@ -1,9 +1,4 @@
 gradio
-PyPDF2==3.0.1
-langchain==0.1.11
-langchain-community==0.0.29
-langchain-core==0.1.36
-langchain-text-splitters==0.0.1
-langchainhub==0.1.15
-conda==24.1.2
-python3==3.12.3
+PyPDF2
+langchain
+langchain-community
