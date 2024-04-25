@@ -33,7 +33,7 @@ Before running the software to collect more data for the Vector Database, ensure
 git clone https://github.com/siddiqitaha/AI_Rag_Llama2.git
 cd AI_Rag_Llama2
 ```
-----, Install all neseccerry Libraries and Dependencies 
+----, Install all necessary  Libraries and Dependencies 
 - Install Python Libraries and Dependencies
 ```bash
 pip install -r requirements.txt
