@@ -38,7 +38,7 @@ cd AI_Rag_Llama2
 ```bash
 pip install -r requirements.txt
 ```
-**(_Only_ Linux) Third,** run Ollama on a **seperate** terminal
+**(_Only_ Linux) Third,** run Ollama on a **separate** terminal
 ```bash
 ollama serve
 ```
