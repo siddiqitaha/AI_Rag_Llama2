@@ -1,12 +1,12 @@
 # Ollama RAG Model Comparison
 
-This project utilizes the Ollama library to compare responses from two different models: a base model using Llama2 with 7b parameters and a custom RAG (Retrieval-Augmented Generation) model. The goal is to evaluate and compare the outputs from both models on a series of questions related to the University of Aberdeen.
+This project uses Ollama library to run a custom Llama 2 with 7b parameters RAG (Retrieval Augmented Generation) model. The program will launch a custom chatbot which references information and data about The University of Aberdeen from its Wikipedia Page. The project includes a data extraction module, retreival engine module, prompt module, and a gradio module. 
 
 ## Overview
 
-The software is designed to query two models using the Ollama framework:
+The software is designed to query Llama2 model using the Ollama framework:
 1. **Base Model (Llama2 7b)** - This model serves as our baseline for generating responses.
-2. **Custom RAG Model** - This is a retrieval-augmented generation model that aims to enhance answer quality by leveraging additional contextual data.
+2. **Custom RAG Model** - This is the retrieval-augmented generation model which enhances the over all answer quality through additional contextual data.
 
 The system processes a predefined list of questions, retrieves answers from both models, and saves the results into a CSV file for easy comparison and analysis.
 
