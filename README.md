@@ -15,8 +15,9 @@ The software is designed to query Llama2 model using the Ollama framework:
 - Incorporates a custom RAG model.
 - Provides a UI to perform queries and test the model.
 - Performs a side to side evaluation by running list of questions through both base and RAG models and saves results to a CSV file.
-
+----
 # Running Chatbot
+--
 ## Windows/Linux (CPU)
 ### Prerequisites
 
@@ -47,10 +48,5 @@ Once the Application in running, it will provide you with the following:
 - Running on local URL:  http://127.0.0.1:7860
 - Running on public URL: https://4e3bcb307590d89f2f.gradio.live
 
---
+
 ----
------
-------
-
-
----
