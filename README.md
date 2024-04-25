@@ -41,7 +41,7 @@ pip install -r requirements.txt
 ```
 **(_Only_ Linux) Third,** run Ollama on a **seperate** terminal
 ```bash
-Ollama serve
+ollama serve
 ```
 
 **Finally**, run the application
