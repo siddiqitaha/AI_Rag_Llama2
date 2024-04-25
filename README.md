@@ -47,7 +47,10 @@ Once the Application in running, it will provide you with the following:
 - Running on local URL:  http://127.0.0.1:7860
 - Running on public URL: https://4e3bcb307590d89f2f.gradio.live
 
+--
+----
+-----
+------
 
----
 
 ---
