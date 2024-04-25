@@ -1,4 +1,4 @@
-import embedding_RetrievalQA_Wiki
+import retrieval_wiki
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from langchain_community.chat_models import ChatOllama
@@ -20,15 +20,15 @@ Question: {question}
 Answer:"""
 
 
-QA_CHAIN_PROMPT = PromptTemplate.from_template(template)# Run chain
+prompt_chain= PromptTemplate.from_template(template)# Run chain
 
 def get_answer(question, temperature):
     set_temperature(temperature)  # Adjust the model's temperature
-    QA_CHAIN_PROMPT = PromptTemplate.from_template(template)  # Use template variable
+    prompt_chain = PromptTemplate.from_template(template)  # Use template variable
     qa_chain = RetrievalQA.from_chain_type(
         llm,
-        retriever=embedding_RetrievalQA_Wiki.db3.as_retriever(),
+        retriever=retrieval_wiki.db3.as_retriever(),
         return_source_documents=True,
-        chain_type_kwargs={"prompt": QA_CHAIN_PROMPT})
+        chain_type_kwargs={"prompt": prompt_chain})
     result = qa_chain.invoke({"query": question})
     return result.get("result", "No response generated.")
