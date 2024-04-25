@@ -29,30 +29,32 @@ Before running the software, ensure you have Python installed along with the nec
 ---
 ### Installation
 
-First, Clone Repository to your local machine:
+**First**, Clone Repository to your local machine:
 ```bash
 git clone https://github.com/siddiqitaha/AI_Rag_Llama2.git
 cd AI_Rag_Llama2
 ```
-Second, Install all neseccerry Libraries and Dependencies 
+----, Install all neseccerry Libraries and Dependencies 
 - Install Python Libraries and Dependencies
 ```bash
 pip install -r requirements.txt
 ```
-(_Only_ Linux) Third, run Ollama on a **seperate** terminal
+**(_Only_ Linux) Third,** run Ollama on a **seperate** terminal
 ```bash
 Ollama serve
 ```
 
-Finally, run the application
+**Finally**, run the application
 ```bash
 python3 gradio_chatbot.py
 ```
+----
 Once the Application in running, it will provide you with the following:
 
 #### Example:
 - Running on local URL:  http://127.0.0.1:7860
 - Running on public URL: https://4e3bcb307590d89f2f.gradio.live
 
-----
+-----
+
 
