@@ -23,25 +23,26 @@ The software is designed to query Llama2 model using the Ollama framework:
 Before running the software, ensure you have Python installed along with the necessary dependencies:
 - Python 3.8 or newer
 - Install [Ollama](https://ollama.com/download/windows)
-- Install Python Libraries and Dependencies
-```bash
-pip install -r requirements.txt
-```
 
 ### Installation
 
 First, clone the repository to your local machine:
 
+- Install Git and Clone Repository
+```bash
+git clone https://github.com/siddiqitaha/AI_Rag_Llama2.git
+cd AI_Rag_Llama2
+```
+- Install Python Libraries and Dependencies
+```bash
+pip install -r requirements.txt
+```
+- Install Python Libraries and Dependencies
+```bash
+python3 gradio_chatbot.py
+```
 
-git clone https://your-repository-url.git
-cd your-project-directory
 
 ---
 
 ---
-
-Install Mini-Conda
-Create Local Environment
-Python 3.11 required for testing
-pip install "giskard[llm]" -U
-
