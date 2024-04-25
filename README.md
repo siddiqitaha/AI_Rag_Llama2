@@ -18,14 +18,14 @@ The software is designed to query Llama2 model using the Ollama framework:
 ----
 # Running Chatbot
 --
-## Windows/Linux (CPU)
+## Windows/Linux (CPU/GPU)
 ### Prerequisites
 
 Before running the software, ensure you have Python installed along with the necessary dependencies:
 - Python 3.8 or newer
 - Install [Ollama](https://ollama.com/download/windows)
 - Install Git
-
+--
 ### Installation
 
 First, Clone Repository to your local machine:
@@ -38,6 +38,11 @@ Second, Install all neseccerry Libraries and Dependencies
 ```bash
 pip install -r requirements.txt
 ```
+(_Only_ Linux) Third, run Ollama on a **seperate** terminal
+```bash
+Ollama serve
+```
+
 Finally, run the application
 ```bash
 python3 gradio_chatbot.py
@@ -48,5 +53,5 @@ Once the Application in running, it will provide you with the following:
 - Running on local URL:  http://127.0.0.1:7860
 - Running on public URL: https://4e3bcb307590d89f2f.gradio.live
 
-
 ----
+
