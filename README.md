@@ -17,7 +17,7 @@ The software is designed to query Llama2 model using the Ollama framework:
 - Performs a side to side evaluation by running list of questions through both base and RAG models and saves results to a CSV file.
 ----
 # Running Chatbot
---
+---
 ## Windows/Linux (CPU/GPU)
 ### Prerequisites
 
@@ -25,7 +25,8 @@ Before running the software, ensure you have Python installed along with the nec
 - Python 3.8 or newer
 - Install [Ollama](https://ollama.com/download/windows)
 - Install Git
---
+- Install CUDA (GPU only)
+---
 ### Installation
 
 First, Clone Repository to your local machine:
