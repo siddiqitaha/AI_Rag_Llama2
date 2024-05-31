@@ -27,8 +27,12 @@ Before running the software to collect more data for the Vector Database, ensure
 
 ---
 ### Installation
+**Second**, Clone Repository to your local machine:
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
 
-**First**, Clone Repository to your local machine:
+**Second**, Clone Repository to your local machine:
 ```bash
 git clone https://github.com/siddiqitaha/AI_Rag_Llama2.git
 cd AI_Rag_Llama2
