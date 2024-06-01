@@ -19,6 +19,7 @@ The software is designed to query Llama2 model using the Ollama framework:
 
 -----
 # Collect New Data
+### Prerequisites
 Before running the software to collect more data for the Vector Database, ensure you have Python installed along with the necessary dependencies:
 - Python 3.8 or newer
 - Install [Ollama](https://ollama.com/download/windows)
